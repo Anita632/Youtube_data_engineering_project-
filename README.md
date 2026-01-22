@@ -1,22 +1,75 @@
-# Youtube Data Analysis Project
-Overview
-This project aims to securely manage, streamline, and perform analysis on the structured and semi-structured YouTube videos data based on the video categories and the trending metrics.
+# YouTube Data Analysis Project
 
-Project Goals
-Data Ingestion — Build a mechanism to ingest data from different sources
-ETL System — We are getting data in raw format, transforming this data into the proper format
-Data lake — We will be getting data from multiple sources so we need centralized repo to store them
-Scalability — As the size of our data increases, we need to make sure our system scales with it
-Cloud — We can’t process vast amounts of data on our local computer so we need to use the cloud, in this case, we will use AWS
-Reporting — Build a dashboard to get answers to the question we asked earlier
-Services we will be using
-Amazon S3: Amazon S3 is an object storage service that provides manufacturing scalability, data availability, security, and performance.
-AWS IAM: This is nothing but identity and access management which enables us to manage access to AWS services and resources securely.
-QuickSight: Amazon QuickSight is a scalable, serverless, embeddable, machine learning-powered business intelligence (BI) service built for the cloud.
-AWS Glue: A serverless data integration service that makes it easy to discover, prepare, and combine data for analytics, machine learning, and application development.
-AWS Lambda: Lambda is a computing service that allows programmers to run code without creating or managing servers.
-AWS Athena: Athena is an interactive query service for S3 in which there is no need to load data it stays in S3.
-Dataset Used
-This Kaggle dataset contains statistics (CSV files) on daily popular YouTube videos over the course of many months. There are up to 200 trending videos published every day for many locations. The data for each region is in its own file. The video title, channel title, publication time, tags, views, likes and dislikes, description, and comment count are among the items included in the data. A category_id field, which differs by area, is also included in the JSON file linked to the region.
+## 📌 Overview
+This project aims to securely manage, process, and analyse structured and semi-structured YouTube video data based on video categories and trending metrics. The solution is designed using a cloud-based architecture on AWS to ensure scalability, efficiency, and performance.
 
+---
+
+## 🎯 Project Goals
+- **Data Ingestion** – Build a mechanism to ingest data from multiple sources  
+- **ETL System** – Transform raw data into a clean and analytics-ready format  
+- **Data Lake** – Store data centrally for easy access and management  
+- **Scalability** – Ensure the system scales as data volume increases  
+- **Cloud Integration** – Use AWS services to handle large-scale data processing  
+- **Reporting** – Build dashboards to generate meaningful insights  
+
+---
+
+## ☁️ AWS Services Used
+
+- **Amazon S3**  
+  Object storage service used to store raw and processed datasets securely and at scale.
+
+- **AWS IAM (Identity and Access Management)**  
+  Manages access control and permissions for AWS services.
+
+- **AWS Glue**  
+  Serverless ETL service used for data discovery, transformation, and preparation.
+
+- **AWS Lambda**  
+  Used to run code without managing servers for automation and event-based processing.
+
+- **AWS Athena**  
+  Query service that allows SQL-based analysis directly on data stored in S3.
+
+- **Amazon QuickSight**  
+  BI tool used for building interactive dashboards and visual reports.
+
+---
+
+## 📂 Dataset Used
+The dataset is sourced from Kaggle and contains statistics on daily trending YouTube videos across multiple countries.
+
+**Dataset Features Include:**
+- Video title  
+- Channel title  
+- Publish time  
+- Tags  
+- Views, likes, dislikes  
+- Description  
+- Comment count  
+- Category ID (mapped using JSON files)  
+
+🔗 Dataset Link:  
 https://www.kaggle.com/datasets/datasnaek/youtube-new
+
+---
+
+## 📊 Key Use Cases
+- Analyse trending content patterns  
+- Identify high-performing categories  
+- Understand engagement metrics (likes, views, comments)  
+- Build dashboards for content insights  
+- Perform scalable cloud-based analytics  
+
+---
+
+## 🛠 Tools & Technologies
+- Python  
+- SQL  
+- AWS (S3, IAM, Glue, Lambda, Athena, QuickSight)  
+- Jupyter Notebook  
+- Kaggle Dataset  
+
+---
+
